@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Bird Game</title>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+
+    <h1>🐦 Flying Bird Game 🕊️</h1>
+    
+    <!-- Game Canvas -->
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Score Display -->
+    <div class="score-container">
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <!-- Game Over Message -->
+    <div id="gameOverMessage" class="game-over">
+        <h2>Game Over! 😵</h2>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()">🔄 Restart</button>
+    </div>
+
+    <!-- Buttons -->
+    <button id="startButton" class="btn" onclick="startGame()">▶ Start Game</button>
+    
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+
+</body>
+</html>

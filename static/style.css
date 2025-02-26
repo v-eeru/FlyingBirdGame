@@ -1,0 +1,50 @@
+/* Background styling */
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #6dd5ed, #2193b0);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game title */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center canvas */
+canvas {
+    border: 3px solid white;
+    background: linear-gradient(to bottom, #f0f8ff, #cce7ff);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Game Over message */
+.game-over {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 5px black;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Animate bird */
+@keyframes bird-fall {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(90deg); }
+}
+.bird-fall {
+    animation: bird-fall 0.5s ease-in-out forwards;
+}
